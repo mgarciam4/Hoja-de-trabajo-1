@@ -1,13 +1,19 @@
 * {
     box-sizing: border-box;
-    margin: 3px;
-    padding: 5px;
 }
 
 .claseCentrar {
     justify-content: center;
     display: flex;
     flex-direction: columna;
+}
+
+.nav-tabs {
+    background-color: rgb(171, 222, 248);
+}
+
+.nav-item :hover {
+    background-color: aquamarine;
 }
 
 h1 {
