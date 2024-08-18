@@ -1,5 +1,18 @@
 * {
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05);
+    min-height: 90px;
+    font-size: 20px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .claseCentrar {
@@ -8,12 +21,19 @@
     flex-direction: columna;
 }
 
+.carousel {
+    min-height: 240px;
+    padding: 10px;
+    border-radius: 2px;
+    text-align: center;
+}
+
 .nav-tabs {
-    background-color: rgb(171, 222, 248);
+    background-color: #8020df;
 }
 
 .nav-item :hover {
-    background-color: aquamarine;
+    background-color: rgb(113, 90, 138);
 }
 
 h1 {
@@ -21,7 +41,6 @@ h1 {
 }
 
 h3 {
-    background-color: rgb(5, 82, 116);
     color: aliceblue;
 }
 
@@ -35,10 +54,12 @@ tr:hover {
     color: aliceblue;
 }
 
-footer {
-    background-color: #16161d;
-    color: aliceblue;
+.bg-dark {
+    background-color: #16161d !important;
+}
+
+#section_footer {
+    padding: 40px 0;
     text-align: center;
-    width: 100%;
-    padding: 10px;
+    color: #fff;
 }

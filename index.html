@@ -10,19 +10,33 @@
 
 <body>
 
-    <section id="navegador">
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="atracciones.html">Atracciones</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="alojamiento.html">Alojamiento</a>
-            </li>
-        </ul>
+    <section>
+        <div class="container pt-4">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"> <b>Excursión Hostales</b></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="atracciones.html">Atracciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="alojamiento.html">Alojamiento</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </section>
+
 
 
     <h1 class="claseCentrar">Excursión a los Hostales del Irtra</h1>
@@ -30,57 +44,8 @@
     <pre class="claseCentrar">Ven y disfruta con nostros de una gran aventura visitando de las atracciones que nos brinda IRTRA en Retalhuleu 
 considerando paradas para consumir alimentos, y tiempos libres para disfrutar independientemente de los Hostales y los parques.
     </pre>
-    <ul class="claseCentrar">
-        <li><a href="#fotos">Galería de imágenes</a></li>
-        <li><a href="#itinerarios">Tabla de itinerarios</a></li>
-        <li><a href="#actividades">Lista de actividades</a></li>
-
-    </ul>
-
-    <h3 id="fotos">Galería de imágenes</h3>
-
-    <div id="carouselHostales" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="2000">
-                <img src="https://aprende.guatemala.com/wp-content/uploads/2017/05/san-martin.jpg" alt="San Martin" class="d-block w-25">
-            </div>
-
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="https://aprende.guatemala.com/wp-content/uploads/2017/05/santa-cruz.jpg" alt="Santa Cruz" class="d-block w-25">
-            </div>
-
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="https://aprende.guatemala.com/wp-content/uploads/2017/05/palajunoj.jpg" alt="Palajunoj" class="d-block w-25">
-            </div>
-
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="https://aprende.guatemala.com/wp-content/uploads/2017/05/rancheria-irtra.jpg" alt="Rancheria" class="d-block w-25">
-            </div>
-
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHostales" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselHostales" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-
-
-
     <div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Xetulul_Guatemala.jpg" width="30%" height="30%" alt="Xetulul">
-        <img src="https://www.guatevalley.com/photo/photo_a1/1428/MbRQwVs9XKI5rLv3tctx.jpg" width="25%" height="25%" alt="Xocomil">
-        <img src="https://dca.gob.gt/noticias-guatemala-diario-centro-america/wp-content/uploads/2019/01/foto-1-pag-19-15.jpg" width="33%" height="30%">
-    </div>
-
-    <div>
-
-
-
+        <hr>
         <div>
             <h3 id="itinerarios" class="claseCentrar">Itinerarios</h3>
             <table class="claseCentrar">
@@ -147,6 +112,8 @@ considerando paradas para consumir alimentos, y tiempos libres para disfrutar in
                 </tr>
             </table>
         </div>
+
+        <hr>
         <h3 id="actividades" class="claseCentrar">Actividades</h3>
         <div class="claseCentrar">
 
@@ -159,11 +126,12 @@ considerando paradas para consumir alimentos, y tiempos libres para disfrutar in
         </div>
     </div>
 
-    <footer>
-        <p>
-            <h4>Miguel Antonio Garcia Mazariegos | Desarrollo Web "B" 2024</h4>
-        </p>
-    </footer>
+    <!--Footer------------------------------------------------------------------>
+    <section id="section_footer" class="bg-dark">
+        <div class="container">
+            <p style="font-size: 20px"><b>Miguel Antonio Garcia Mazariegos | Desarrollo Web "B" 2024</b>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
