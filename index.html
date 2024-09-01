@@ -4,6 +4,15 @@
 <head>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Bootstrap Datepicker CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <title>Hostales | Inicio</title>
 </head>
@@ -127,13 +136,121 @@ considerando paradas para consumir alimentos, y tiempos libres para disfrutar in
     </div>
 
     <!--Footer------------------------------------------------------------------>
+    <section id="comentarios">
+
+        <h3>Comentarios</h3>
+        <div id="usuarios">
+
+        </div>
+
+
+    </section>
+    <!--contactanos*********************************************************************************************-->
+    <section id="section-contact">
+        <form class="container" style="margin-top: 45px;margin-bottom: 45px;">
+            <div class="row">
+                <div class="col-md-6 topmargin-sm">
+                    <h3>Listo para un pasartela bien? <b>contáctanos.</b></h3>
+                    <p>Quieres pasar un buen fin de semana, aprovechando al maximo de las instalaciones, comida, piscinas, juegos mecanicos y mucho más!!!.
+                </div>
+
+
+                <div class="col-md-6 topmargin-sm">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="input-group date" id="datepicker">
+                                    <input type="text" class="form-control" placeholder="fecha de nacimiento" id="dateInput" readonly>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="correo" placeholder="Correo" required>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group topmargin-xs">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Mensaje" id="mensaje" style="height: 100px"></textarea>
+                                    <label for="floatingTextarea2">Mensaje</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 topmargin-xs" style="margin-top: 15px;">
+                            <button class="btn btn-dark full-width" id="contactanos" type="button" onclick="datos()" data-toggle="modal" data-target="#modalContact">Contáctanos</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section>
+        <div class="modal" id="modalContact" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contactanos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Datos enviados satisfactoriamente</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer------------------------------------------------------------------>
     <section id="section_footer" class="bg-dark">
         <div class="container">
             <p style="font-size: 20px"><b>Miguel Antonio Garcia Mazariegos | Desarrollo Web "B" 2024</b>
         </div>
     </section>
-
+    <script src="js/forms.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <!-- Bootstrap Datepicker JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#datepicker').datepicker({
+                format: 'mm/dd/yyyy',
+                autoclose: true
+            }).on('changeDate', function(e) {
+                // Display the selected date in the input field
+                $('#dateInput').val(e.format());
+            });
+        });
+    </script>
+
 </body>
 
 
